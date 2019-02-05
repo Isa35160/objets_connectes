@@ -21,6 +21,6 @@ class LightSensor:
             # Tant que la broche lit ‘off’ on incrémente notre variable
             while GPIO.input(self.broche) == GPIO.LOW:
                 lightCount += 1
-                socketIo.emit('LightLive', lightCount, Broadcast=True)
-                time.sleep(10)
+            socketIo.emit('LightLive', lightCount, Broadcast=True)
+            time.sleep(10)
 
