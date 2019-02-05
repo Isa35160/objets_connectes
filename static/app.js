@@ -13,6 +13,11 @@ $(function () {
                         "background-color": 'white',
                         "color":'black'
                 })
+            } else {
+                $('#lightDetect').css({
+                        "background-color": 'black',
+                        "color":'white'
+                })
             }
             ;
         }
