@@ -6,26 +6,27 @@ import time
 GPIO.setmode(GPIO.BCM)
 GPIO.setwarnings(False)
 
-# Numéro de la broche que nous allons utiliser pour lire
-# les données
 
-broche = 14
+class LightSensor():
+    broche = 14
+
+    def read_light(self):
+        lightCount = 0  # intitialisation de la variable de lumière
+        GPIO.setup(self.broche, GPIO.OUT)
+        GPIO.output(self.broche, GPIO.LOW)
+        time.sleep(0.1) # on draine la charge du condensateur
+        GPIO.setup(self.broche, GPIO.IN)
+        # Tant que la broche lit ‘off’ on incrémente notre variable
+        while GPIO.input(self.broche) == GPIO.LOW:
+            lightCount += 1
+            # socketIo.emit('LightLive', lightCount, Broadcast=True)
+            return lightCount
 
 
-def read_light():
-    lightCount = 0  # intitialisation de la variable de lumière
-    GPIO.setup(broche, GPIO.OUT)
-    GPIO.output(broche, GPIO.LOW)
-    time.sleep(0.1) # on draine la charge du condensateur
-    GPIO.setup(broche, GPIO.IN)
-    # Tant que la broche lit ‘off’ on incrémente notre variable
-    while GPIO.input(broche) == GPIO.LOW:
-        lightCount += 1
-    return lightCount
 
 # Boucle infini jusqu'à CTRL-C
-
-
+light = LightSensor()
+#
 while True:
-    print(read_light())
+    print(light.read_light())
     time.sleep(1)
