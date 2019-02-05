@@ -3,12 +3,13 @@ import time
 
 # Initialisation des GPIOs
 
-GPIO.setmode(GPIO.BCM)
-GPIO.setwarnings(False)
 
 
 class LightSensor:
     broche = 14
+
+    GPIO.setmode(GPIO.BCM)
+    GPIO.setwarnings(False)
 
     def read_light(self, socketIo):
         lightCount = 0  # intitialisation de la variable de lumière
