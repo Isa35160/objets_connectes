@@ -8,7 +8,7 @@ GPIO.setwarnings(False)
 
 # Numéro de la broche que nous allons utiliser pour lire
 # les données
-broche=27
+broche=14
 
 def read_light():
     lightCount = 0 #intitialisation de la variable de lumière

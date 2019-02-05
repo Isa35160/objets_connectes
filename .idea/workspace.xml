@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1007d44f-6107-4ce4-8ed6-cd538b88feeb" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/R_User_Library.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/light.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/temperature.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/objets_connectes.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/objets_connectes.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/light.py" beforeDir="false" afterPath="$PROJECT_DIR$/light.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -53,7 +50,14 @@
           </file>
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/light.py">
-              <provider selected="true" editor-type-id="text-editor" />
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="190">
+                  <caret line="10" column="9" selection-start-line="10" selection-start-column="9" selection-end-line="10" selection-end-column="9" />
+                  <folding>
+                    <element signature="e#0#23#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
             </entry>
           </file>
         </leaf>
@@ -65,6 +69,7 @@
       <list>
         <option value="HTML File" />
         <option value="CSS File" />
+        <option value="Python Script" />
       </list>
     </option>
   </component>
@@ -143,18 +148,18 @@
       <option name="presentableId" value="Default" />
       <updated>1549354032820</updated>
       <workItem from="1549354034017" duration="1355000" />
-      <workItem from="1549355953091" duration="636000" />
+      <workItem from="1549355953091" duration="1131000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1991000" />
+    <option name="totallyTimeSpent" value="2486000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25266525" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25266525" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -168,7 +173,7 @@
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info anchor="bottom" id="Terminal" order="11" visible="true" weight="0.32887402" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="11" visible="true" weight="0.32887402" />
       <window_info anchor="bottom" id="Python Console" order="12" />
       <window_info anchor="right" id="R Graphics" />
       <window_info anchor="right" id="R Packages" />
@@ -208,7 +213,14 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/light.py">
-      <provider selected="true" editor-type-id="text-editor" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="10" column="9" selection-start-line="10" selection-start-column="9" selection-end-line="10" selection-end-column="9" />
+          <folding>
+            <element signature="e#0#23#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
     </entry>
   </component>
 </project>
