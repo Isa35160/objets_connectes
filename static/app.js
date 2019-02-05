@@ -18,8 +18,12 @@ $(function () {
                         "background-color": 'black',
                         "color":'white'
                 })
-            }
-            ;
+            };
         }
+    })
+    ;
+
+    socket.on('ApiTemp', function (data) {
+        $('#apiTemp').text(data)
     });
 });
