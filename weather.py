@@ -21,5 +21,5 @@ m = observation.get_weather()
 m.get_wind()                  # {'speed': 4.6, 'deg': 330}
 m.get_humidity()              # 87
 m.get_temperature('celsius')  # {'temp_max': 10.5, 'temp': 9.7, 'temp_min': 9.0}
-print(m.get_temperature('celcius'))
+print(m.get_temperature('celsius'))
 observation_list = owm.weather_around_coords(48.117266, -1.6777926)
