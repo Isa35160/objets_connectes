@@ -9,8 +9,8 @@ $(function () {
         $(`#lightDetect`).text(data);
         {
             if (data >= 80) {
-                $('#lightDetect').style.backgroundColor = #fff;
-                $(`#lightDetect`).style.color = black;
+                $('#lightDetect').style.backgroundColor = 'white';
+                $(`#lightDetect`).style.color = 'black';
             }
             ;
         }
