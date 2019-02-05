@@ -6,7 +6,7 @@ $(function () {
     });
 
     socket.on('LightLive', function (data) {
-        $(`#lightDetect`).text(data);
+        $('#lightDetect').text(data);
         // // {
         // //     if (data >= 80) {
         // //         $('#lightDetect').css({
