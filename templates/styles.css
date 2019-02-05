@@ -1,0 +1,29 @@
+.round {
+    width: 500px;
+    height: 500px;
+    border: 2px solid #ccc;
+    border-radius: 50%;
+    margin: 0 auto;
+    font-family: Candara, sans-serif;
+    box-shadow: 2px 2px 2px 2px #eee;
+    position: relative;
+}
+
+#background_color {
+    background-color: #e1e1e1;
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#temperature_interne{
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+.heure{
+    font-weight: bold;
+    font-size: 2rem;
+}
