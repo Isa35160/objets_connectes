@@ -22,9 +22,3 @@ class LightSensor:
             socketIo.emit('LightLive', lightCount, Broadcast=True)
 
 
-# Boucle infini jusqu'à CTRL-C
-# light = LightSensor()
-# #
-# while True:
-#     print(light.read_light())
-#     time.sleep(1)
