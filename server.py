@@ -1,12 +1,11 @@
-from flask import Flask
-from flask_socketio import SocketIO, send, emit
-from flask import render_template
-import time
 import threading
+
+from flask import Flask
+from flask import render_template
+from flask_socketio import SocketIO
+
+from lightSensor import LightSensor
 from temperatureSensor import TemperatureSensor
-
-
-
 app = Flask(__name__)
 socketio = SocketIO(app)
 
@@ -15,22 +14,14 @@ socketio = SocketIO(app)
 def index():
     return render_template('index.html')
 
-
-# def message_loop():
-#     while True:
-#         socketio.emit('alert', Broadcast=True)
-#
-
+# définition de nos objets
 tempSens = TemperatureSensor()
-# Vue que notre méthode pour lire nos message est une boucle infinie
-# Elle bloquerait notre serveur. Qui ne pourrait répondre à aucune requête.
-# Ici nous créons un Thread qui va permettre à notre fonction de se lancer
-# en parallèle du serveur.
-# read_messages = threading.Thread(target=message_loop)
-detect = threading.Thread(target=move.detectMove, args=(socketio,))
-temp = threading.Thread(target=tempSens.readTempLive, args=(socketio,))
-# read_messages.start()
-detect.start()
-temp.start()
+lightSens = LightSensor()
 
+# threading sur le thermomètre et le capteur de lumière
+temp = threading.Thread(target=tempSens.readTempLive, args=(socketio,))
+lightSens = threading.Thread(target=lightSens.read_light, args=(socketio,))
+
+lightSens.start()
+temp.start()
 
