@@ -22,5 +22,5 @@ class LightSensor:
             while GPIO.input(self.broche) == GPIO.LOW:
                 lightCount += 1
             socketIo.emit('LightLive', lightCount, Broadcast=True)
-            time.sleep(10)
+            time.sleep(2)
 
