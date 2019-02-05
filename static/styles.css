@@ -15,7 +15,7 @@ body{
     position: relative;
 }
 
-#background_color {
+#lightDetect {
     background-color: #20201e;
     color: white;
     width: 500px;
@@ -25,7 +25,7 @@ body{
     text-align: center;
 }
 
-#temperature_interne{
+#tempDetectInterne{
     font-weight: 800;
     font-size: 2rem;
     padding: 25px;
