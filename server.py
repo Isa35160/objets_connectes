@@ -2,7 +2,7 @@ import threading
 
 from flask import Flask
 from flask import render_template
-from flask_socketio import SocketIO
+from flask_socketio import SocketIO, send, emit
 
 from lightSensor import LightSensor
 from temperatureSensor import TemperatureSensor
@@ -15,6 +15,8 @@ def index():
     return render_template('index.html')
 
 # définition de nos objets
+
+
 tempSens = TemperatureSensor()
 lightSens = LightSensor()
 
