@@ -6,14 +6,15 @@ $(function () {
     });
 
     socket.on('LightLive', function (data) {
-        $(`#lightDetect`).text(data);
+        $(`#lightDetect`).html(data);
         {
             if (data >= 80) {
-                $('#lightDetect').style.backgroundColor = 'white';
-                $(`#lightDetect`).style.color = 'black';
+                $('#lightDetect').css({
+                        "background-color": 'white',
+                        "color":'black'
+                })
             }
             ;
         }
     })
 });
-
